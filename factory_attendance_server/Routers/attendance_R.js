@@ -10,7 +10,7 @@ router.post("/Entry", [attendance_Mid.AddEntry], (req, res) => {
     else
         return res.status(500).json({message: res.err});
 });
-
+// Employee Exit
 router.post("/Exit", [attendance_Mid.AddExit], (req, res) => {
     if(res.ok)
         res.status(200).json({message:"OK", Last_Id:res.insertId});
