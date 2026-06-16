@@ -1,3 +1,4 @@
+// Factory Attendance Server
 //npm i express mysql2 body-parser cors
 process.env.TZ = "Asia/Jerusalem";
 
