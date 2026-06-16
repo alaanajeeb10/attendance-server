@@ -1,3 +1,4 @@
+// Generic Database Functions
 async function QueryExecSimpleReply(Query,values=[]) {
     const promisePool = db_pool.promise();
     let rows=[];
