@@ -3,7 +3,7 @@ const router = express.Router();
 module.exports = router;
 
 const attendance_Mid = require("../middleware/attendance_Mid");
-
+// Employee Entry
 router.post("/Entry", [attendance_Mid.AddEntry], (req, res) => {
     if(res.ok)
         res.status(200).json({message:"OK", Last_Id:res.insertId});
