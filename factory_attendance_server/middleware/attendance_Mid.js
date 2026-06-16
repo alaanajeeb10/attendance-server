@@ -65,7 +65,7 @@ async function GetMonthlyReport(req,res,next){
     res.err="";
 
     if(month === "" || year === ""){
-        res.err="wrong parameters";
+        res.err="Missing Required Parameters";
         return next();
     }
 
