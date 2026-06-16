@@ -15,3 +15,4 @@ CREATE TABLE IF NOT EXISTS workers_log (
 INSERT INTO workers_log (worker_id, full_name, action_type, action_date, action_time, note) VALUES
 ('216622415','יאמן עלא אלדין','IN','2026-01-05','08:00:00','כניסה רגילה'),
 ('216622415','יאמן עלא אלדין','OUT','2026-01-05','16:00:00','יציאה רגילה');
+-- Attendance Export File
