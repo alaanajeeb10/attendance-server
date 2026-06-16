@@ -70,6 +70,8 @@ async function GetMonthlyReport(req,res,next){
     }
 
     // שליפת כל הכניסות והיציאות בחודש שנבחר
+    // Monthly Attendance Report
+
     let Query = `SELECT id, worker_id, full_name, action_type, DATE_FORMAT(action_date,'%Y-%m-%d') as action_date, action_time, note FROM ${tableName} `;
     Query += ` WHERE MONTH(action_date)=? AND YEAR(action_date)=? `;
     Query += ` ORDER BY action_date, action_time `;
