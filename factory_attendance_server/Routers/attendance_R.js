@@ -1,5 +1,4 @@
-// Attendance Middleware Functions
-const express = require('express');
+// Attendance Middlewareconst express = require('express');
 const router = express.Router();
 module.exports = router;
 
